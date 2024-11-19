@@ -9,8 +9,14 @@ class Document extends Model
 {
     use HasFactory;
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+   
+    protected $fillable = [
+        'title',          
+        'description',     
+        'file_path',       
+        'file_type',      
+        'user_id',        
+        'document_url',    
+    ];
+
 }

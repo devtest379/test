@@ -28,6 +28,6 @@ class DocumentController extends Controller
             'verification_requested' => true, 
         ]);
 
-        return redirect()->route('profile')->with('success', 'Your document has been uploaded and is pending verification.');
+        return back()->with('success', 'Your document has been uploaded and is pending verification.');
     }
 }
