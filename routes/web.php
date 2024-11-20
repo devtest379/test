@@ -45,3 +45,5 @@ Route::get('/upload-document', [DocumentController::class, 'create'])
 Route::post('/upload-document', [DocumentController::class, 'store'])
     ->name('document.store');
 
+    
+Route::get('/admin/verifieduser', [VerifiedUserController::class, 'index']);
